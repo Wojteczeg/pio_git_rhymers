@@ -4,7 +4,7 @@ public class DefaultCountingOutRhymer {
 
     public  int HEAP_MAX_SIZE = 12;
     public  int DEFAULT = -1;
-    private int[] numbers = new int[HEAP_MAX_SIZE];
+    final private int[] numbers = new int[HEAP_MAX_SIZE];
 
     public int total = DEFAULT;
 
