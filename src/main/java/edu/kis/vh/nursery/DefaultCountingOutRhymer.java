@@ -6,6 +6,12 @@ public class DefaultCountingOutRhymer {
     public  int DEFAULT = -1;
     final private int[] numbers = new int[HEAP_MAX_SIZE];
 
+    private int total = -1;
+    
+     public int getTotal() {
+        return total;
+    }
+
     public int total = DEFAULT;
 
     public void countIn(int in) {
@@ -33,4 +39,7 @@ public class DefaultCountingOutRhymer {
         return numbers[total--];
     }
 
+    public int[] getNumbers() {
+        return numbers;
+    }
 }
