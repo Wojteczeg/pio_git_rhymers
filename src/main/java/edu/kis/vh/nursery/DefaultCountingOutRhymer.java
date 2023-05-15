@@ -20,7 +20,6 @@ public class DefaultCountingOutRhymer {
     public boolean callCheck() {
         return total == DEFAULT;
     }
-
     public boolean isFull() {
         return total == HEAP_MAX_SIZE-1;
     }
