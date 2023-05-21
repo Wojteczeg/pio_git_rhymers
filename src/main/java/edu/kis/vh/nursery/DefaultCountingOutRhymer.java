@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
     public  int HEAP_MAX_SIZE = 12;
+    private final int HEAP_EMPTY = -1;
     public  int DEFAULT = -1;
     final private int[] numbers = new int[HEAP_MAX_SIZE];
 
@@ -27,17 +28,17 @@ public class DefaultCountingOutRhymer {
 
     protected int peekaboo() {
         if (callCheck())
-            return DEFAULT;
+            return HEAP_EMPTY;
         return numbers[total];
     }
 
     public int countOut() {
         if (callCheck())
-            return DEFAULT;
+            return HEAP_EMPTY;
         return numbers[total--];
     }
 
     public int[] getNumbers() {
-        return numbers;
+         return numbers;
     }
 }
