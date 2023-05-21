@@ -6,6 +6,11 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
     public int reportRejected() {
         return totalRejected;
     }
+
+    /**
+     * Count in total
+     * @param in
+     */
     @Override
     public void countIn(int in) {
         if (!callCheck() && in > peekaboo())
@@ -13,6 +18,11 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
         else
             super.countIn(in);
     }
+
+    /**
+     *Get total amount of rejected count
+     * @return totalRejected
+     */
     public int getTotalRejected() {
         return totalRejected;
     }
